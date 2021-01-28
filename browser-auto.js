@@ -1,6 +1,5 @@
 const Nightmare = require('nightmare');
 
-// nightmare.jsの練習
 // yahoo検索
 async function nightmare() {
   await Nightmare({show: true})
