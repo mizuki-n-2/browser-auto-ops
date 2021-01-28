@@ -1,2 +1,2 @@
 # browser-auto-ops
-- ブラウザ自動操作の練習
+- ブラウザ自動操作の練習(nightmare)
