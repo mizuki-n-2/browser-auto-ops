@@ -1,10 +1,12 @@
 const Nightmare = require('nightmare');
 
-// yahoo検索
+// 明治大学ホームページ自動ログイン
 async function nightmare() {
-  await Nightmare({show: true})
-    .goto('http://yahoo.co.jp')
-    .type('._1wsoZ5fswvzAoNYvIJgrU4', 'nightmarejs')
-    .click('._63Ie6douiF2dG_ihlFTen');
+  await Nightmare({ show: true })
+    .goto('https://oh-o2.meiji.ac.jp/portal/index')
+    .click('.login > dt > a')
+    .type('input[name="ACCOUNTUID"]', 'ここに学籍番号')
+    .type('input[name="PASSWORD"]', 'ここにパスワード')
+    .click('input[name="SUBMIT"]');
 };
 nightmare();
